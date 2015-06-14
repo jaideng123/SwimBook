@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fname: MyString
+  lname: MyString
+  age: 1
+  parent: MyString
+  pink: 2015-06-13
+  yellow: 2015-06-13
+  guard: MyString
+
+two:
+  fname: MyString
+  lname: MyString
+  age: 1
+  parent: MyString
+  pink: 2015-06-13
+  yellow: 2015-06-13
+  guard: MyString

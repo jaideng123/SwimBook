@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @entry.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @entry.lname %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @entry.age %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @entry.parent %>
+</p>
+
+<p>
+  <strong>Pink:</strong>
+  <span style="background-color: #FF1975"><%= @entry.pink %></span>
+</p>
+
+<p>
+  <strong>Yellow:</strong>
+  <span style="background-color: #FFFF00"><%= @entry.yellow %></span>
+</p>
+
+<p>
+  <strong>Guard:</strong>
+  <%= @entry.guard %>
+</p>
+
+<%= button_to 'Edit', edit_entry_path(@entry) %> 
+<%= button_to 'Destroy', @entry, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Back', entries_path %>
