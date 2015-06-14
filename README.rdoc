@@ -1,28 +1,7 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I work at a YMCA where we swim test kids every day and put it all in 2 huge books that are a pain and get disorganized, so i designed this web app to keep track of all the kids that we swim test so they can be easily added and searched through. I want it to look pretty but the main focus will be simplicity and ease of use.
 
-Things you may want to cover:
+*Ruby Version = 2.1.5
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*Rails Version = 4.1.8
