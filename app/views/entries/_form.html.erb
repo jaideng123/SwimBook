@@ -29,15 +29,19 @@
   </div>
   <div class="field">
     <%= f.label :pink %><br>
-    <%= f.date_select :pink %>
+    <%= f.check_box :pink %>
   </div>
   <div class="field">
     <%= f.label :yellow %><br>
-    <%= f.date_select :yellow %>
+    <%= f.check_box :yellow %>
   </div>
   <div class="field">
     <%= f.label :guard %><br>
     <%= f.text_field :guard %>
+  </div>
+  <div class="field">
+    <%= f.label :tested %><br>
+    <%= f.date_select :tested %>
   </div>
   <div class="actions">
     <%= f.submit %>

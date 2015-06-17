@@ -10,6 +10,7 @@
       <th>Pink</th>
       <th>Yellow</th>
       <th>Guard</th>
+	  <th>Test Date</th>
       
     </tr>
   </thead>
@@ -21,9 +22,20 @@
 		<td><%= truncate(entry.fname,:length => 20) %></td>
         <td><%= entry.age %></td>
         <td><%= truncate(entry.parent,:length => 20) %></td>
-        <td> <span style="background-color: #FF1975"><%= entry.pink %></span> </td>
-        <td> <span style="background-color: #FFFF00"><%= entry.yellow %></span> </td>
+        <td><span style="background-color: #FF1975"> 
+			<% if entry.pink? %>
+				<font size = '4'>&#10003;</font>
+			<% end %>
+		</span>
+		</td>
+		<td><span style="background-color: #FFFF00"> 
+			<% if entry.yellow? %>
+				<font size = '4'>&#10003;</font>
+			<% end %>
+		</span>
+		</td>
         <td><%= entry.guard %></td>
+		<td><%= entry.tested %></td>
         <td><%= link_to 'Show', entry %></td>
       </tr>
     <% end %>

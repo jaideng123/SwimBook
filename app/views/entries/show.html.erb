@@ -34,6 +34,10 @@
   <strong>Guard:</strong>
   <%= @entry.guard %>
 </p>
+<p>
+  <strong>Test Date:</strong>
+  <%= @entry.tested %>
+</p>
 
 <%= button_to 'Edit', edit_entry_path(@entry) %> 
 <%= button_to 'Destroy', @entry, method: :delete, data: { confirm: 'Are you sure?' } %>

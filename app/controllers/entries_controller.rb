@@ -69,6 +69,6 @@ class EntriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def idea_params
-      params.require(:entry).permit(:fname, :lname, :age, :parent, :pink, :yellow, :guard)
+      params.require(:entry).permit(:fname, :lname, :age, :parent, :pink, :yellow, :guard, :tested)
     end
 end
