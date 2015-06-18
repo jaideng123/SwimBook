@@ -1,10 +1,11 @@
 class EntriesController < ApplicationController
+  require 'will_paginate/array' 
   before_action :set_idea, only: [:show, :edit, :update, :destroy]
 
   # GET /ideas
   # GET /ideas.json
   def index
-    @entries = Entry.all.sort_by &:lname
+    @entries = Entry.all.sort_by( &:lname).paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /ideas/1
