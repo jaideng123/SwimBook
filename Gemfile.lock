@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionmailer (4.1.8)
       actionpack (= 4.1.8)
@@ -66,6 +67,32 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.8)
       sprockets-rails (~> 2.0)
+    rails-assets-DataTables (1.10.7)
+      rails-assets-jquery (>= 1.7.0)
+    rails-assets-angular (1.4.1)
+    rails-assets-bootstrap (3.2.0)
+      rails-assets-jquery (>= 1.9.0)
+    rails-assets-flot (0.8.3)
+      rails-assets-jquery (>= 1.2.6)
+    rails-assets-flot.tooltip (0.7.1)
+    rails-assets-font-awesome (4.1.0)
+    rails-assets-jquery (2.1.4)
+    rails-assets-leaflet (0.7.3)
+    rails-assets-metisMenu (1.0.3)
+    rails-assets-mocha (1.17.1)
+    rails-assets-morrisjs (0.5.1)
+      rails-assets-jquery (>= 2.1.0)
+      rails-assets-mocha (~> 1.17.1)
+      rails-assets-raphael (>= 2.0)
+    rails-assets-raphael (2.1.4)
+    rails-assets-sb-admin-v2 (0.1.0)
+      rails-assets-DataTables (~> 1.10.0)
+      rails-assets-bootstrap (~> 3.2.0)
+      rails-assets-flot (~> 0.8.3)
+      rails-assets-flot.tooltip (~> 0.7.1)
+      rails-assets-font-awesome (~> 4.1.0)
+      rails-assets-metisMenu (~> 1.0.1)
+      rails-assets-morrisjs (~> 0.5.1)
     railties (4.1.8)
       actionpack (= 4.1.8)
       activesupport (= 4.1.8)
@@ -110,11 +137,16 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bundler (>= 1.7.7)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg
   rails (= 4.1.8)
+  rails-assets-angular!
+  rails-assets-bootstrap!
+  rails-assets-leaflet!
+  rails-assets-sb-admin-v2!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   turbolinks
