@@ -15,6 +15,4 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
-//= require sb-admin-v
-//= require metisMenu
-//= require flot
+//= require sb-admin-v2
