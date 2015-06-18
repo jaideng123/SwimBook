@@ -1,0 +1,43 @@
+<h1>Listing Entries</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Age</th>
+      <th>Parent</th>
+      <th>Pink</th>
+      <th>Yellow</th>
+      <th>Guard</th>
+	  <th>Test Date</th>
+      
+    </tr>
+  </thead>
+<%= will_paginate @entries %>
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= link_to truncate(entry.lname,:length => 20), entry %></td>
+		<td><%= truncate(entry.fname,:length => 20)%></td>
+        <td><%= entry.age %></td>
+        <td><%= truncate(entry.parent,:length => 20) %></td>
+        <td><span style="background-color: #FF1975"> 
+			<% if entry.pink? %>
+				<font size = '4'>&#10003;</font>
+			<% end %>
+		</span>
+		</td>
+		<td><span style="background-color: #FFFF00"> 
+			<% if entry.yellow? %>
+				<font size = '4'>&#10003;</font>
+			<% end %>
+		</span>
+		</td>
+        <td><%= entry.guard %></td>
+		<td><%= entry.tested %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

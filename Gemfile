@@ -40,6 +40,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
+#For Searching
+gem 'textacular', '~> 3.0'
+
+#Rails Assets
 gem 'bundler', '>= 1.7.7'
 
 source 'https://rails-assets.org' do
