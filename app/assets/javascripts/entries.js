@@ -1,6 +1,7 @@
 $(document).ready(function(){
 var show_date = true;
 var show_guard = true;
+var show_parent = true;
 if($( window ).width() < 630 && show_date){
 	   console.log("Cut Date");
 	   $('td:nth-child(8)').hide();
@@ -13,7 +14,12 @@ if($( window ).width() < 530 && show_guard){
 	   $('th:nth-child(7)').hide();
 	   show_guard = false;
 }
-$( window ).resize(function() {
+if($( window ).width() < 430 && show_parent){
+	   console.log("Cut Parent");
+	   $('td:nth-child(4)').hide();
+	   $('th:nth-child(4)').hide();
+	   show_parent = false;
+}$( window ).resize(function() {
    if($( window ).width() < 630 && show_date){
 	   console.log("Cut Date");
 	   $('td:nth-child(8)').hide();
