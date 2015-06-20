@@ -64,7 +64,7 @@ class EntriesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_idea
+    def set_entry
       @entry = Entry.find(params[:id])
     end
 
