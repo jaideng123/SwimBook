@@ -17,3 +17,4 @@
 //= require bootstrap
 //= require sb-admin-v2
 //= require DataTables
+//= require dataTables.responsive
