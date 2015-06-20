@@ -16,7 +16,8 @@
  *= require sb-admin-v2
  *= require font-awesome
  *= require metisMenu
- *= require DataTables 
+ *= require DataTables
+ *= require dataTables.responsive
 */
  
 /* Fixes sidebar weirdness that occurs */
