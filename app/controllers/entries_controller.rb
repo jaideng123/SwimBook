@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   require 'will_paginate/array' 
-  before_action :set_idea, only: [:show, :edit, :update, :destroy]
+  before_action :set_entry, only: [:show, :edit, :update, :destroy]
 
   # GET /ideas
   # GET /ideas.json
