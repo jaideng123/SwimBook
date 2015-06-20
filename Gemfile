@@ -52,5 +52,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-angular'
   gem 'rails-assets-leaflet'
+  gem 'rails-assets-DataTables'
   gem 'rails-assets-sb-admin-v2'
 end

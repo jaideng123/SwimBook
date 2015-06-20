@@ -147,6 +147,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 4.1.8)
+  rails-assets-DataTables!
   rails-assets-angular!
   rails-assets-bootstrap!
   rails-assets-leaflet!

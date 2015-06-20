@@ -5,7 +5,7 @@ class EntriesController < ApplicationController
   # GET /ideas
   # GET /ideas.json
   def index
-    @entries = Entry.all.sort_by( &:lname).paginate(:page => params[:page], :per_page => 5)
+    @entries = Entry.all
   end
 
   # GET /ideas/1

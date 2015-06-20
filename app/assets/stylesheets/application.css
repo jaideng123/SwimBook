@@ -16,7 +16,8 @@
  *= require sb-admin-v2
  *= require font-awesome
  *= require metisMenu
- */
+ *= require DataTables 
+*/
  
 /* Fixes sidebar weirdness that occurs */
 @media(min-width:768px) {

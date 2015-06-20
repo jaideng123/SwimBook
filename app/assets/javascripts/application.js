@@ -16,3 +16,4 @@
 //= require_tree .
 //= require bootstrap
 //= require sb-admin-v2
+//= require DataTables
