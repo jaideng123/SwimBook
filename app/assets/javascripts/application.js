@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require bootstrap
 //= require sb-admin-v2
 //= require DataTables
 //= require dataTables.responsive
+//= require turbolinks
