@@ -11,11 +11,11 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require dataTables/jquery.dataTables
  *= require_self
  *= require bootstrap
  *= require font-awesome
  *= require metisMenu
- *= require DataTables
  *= require dataTables.responsive
  *= require sb-admin-v2
 */

@@ -50,10 +50,11 @@ gem 'textacular', '~> 3.0'
 #Rails Assets
 gem 'bundler', '>= 1.7.7'
 
+gem 'jquery-datatables-rails', '~> 3.3.0'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-angular'
   gem 'rails-assets-leaflet'
-  gem 'rails-assets-DataTables'
   gem 'rails-assets-sb-admin-v2'
 end
