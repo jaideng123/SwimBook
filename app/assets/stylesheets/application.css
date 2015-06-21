@@ -29,7 +29,9 @@ position: absolute;
 width: 250px;
 margin-top: 55px;
 }
-
+.sidebar ul li{
+	border-bottom: 1px solid #E7E7E7;
+}
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
