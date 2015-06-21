@@ -39,6 +39,6 @@
   <%= @entry.tested %>
 </p>
 
-<%= button_to 'Edit', edit_entry_path(@entry) %> 
+<%= button_to 'Edit', edit_entry_path(@entry), method: :get %> 
 <%= button_to 'Destroy', @entry, method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= link_to 'Back', entries_path %>
+<%= button_to 'Back', entries_path,method: :get %>
