@@ -14,10 +14,11 @@
  *= require dataTables/jquery.dataTables
  *= require_self
  *= require bootstrap
- *= require font-awesome
  *= require metisMenu
  *= require dataTables.responsive
  *= require sb-admin-v2
+ *= require morrisjs
+ *= require font-awesome
 */
  
 /* Fixes sidebar weirdness that occurs */
@@ -26,7 +27,7 @@
 z-index: 1;
 position: absolute;
 width: 250px;
-margin-top: 51px;
+margin-top: 55px;
 }
 
 .navbar-top-links .dropdown-messages,

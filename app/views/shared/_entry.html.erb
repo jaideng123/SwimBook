@@ -1,0 +1,22 @@
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= link_to truncate(entry.lname,:length => 10), entry %></td>
+    <td><%= truncate(entry.fname,:length => 10)%></td>
+        <td><span style="background-color: #FF1975"> 
+      <% if entry.pink? %>
+        <font size = '4'>&#10003;</font>
+      <% end %>
+    </span>
+    </td>
+    <td><span style="background-color: #FFFF00"> 
+      <% if entry.yellow? %>
+        <font size = '4'>&#10003;</font>
+      <% end %>
+    </span>
+    </td>
+    <td><%= entry.age %></td>
+    <td><%= truncate(entry.parent,:length => 10) %></td>
+    <td><%= entry.guard %></td>
+    <td><%= entry.tested %></td>
+      </tr>
+<% end %>
