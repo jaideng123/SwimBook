@@ -1,0 +1,1 @@
+var show_date=!0,show_guard=!0,show_parent=!0;$(document).ready(function(){$("#EntryTable").dataTable({bFilter:!1,bAutoWidth:!1,bSortable:!1})});
