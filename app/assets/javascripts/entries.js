@@ -2,7 +2,7 @@ var show_date = true;
 var show_guard = true;
 var show_parent = true;
 $(document).ready(function(){
-	$('#EntryTable').dataTable({bFilter: false,bAutoWidth: false});
+	$('#EntryTable').dataTable({bFilter: false,bAutoWidth: false,bSortable: false});
 	// function getUrlParameter(sParam)
 	// {
 	//     var sPageURL = window.location.search.substring(1);

@@ -13,11 +13,11 @@
  *= require_tree .
  *= require_self
  *= require bootstrap
- *= require sb-admin-v2
  *= require font-awesome
  *= require metisMenu
  *= require DataTables
  *= require dataTables.responsive
+ *= require sb-admin-v2
 */
  
 /* Fixes sidebar weirdness that occurs */
