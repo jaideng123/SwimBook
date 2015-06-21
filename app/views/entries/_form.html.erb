@@ -10,40 +10,39 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    First Name<br>
-    <%= f.text_field :fname %>
-  </div>
-  <div class="field">
-    Last Name<br>
-    <%= f.text_field :lname %>
-  </div>
-  <div class="field">
-    <%= f.label :age %><br>
-    <%= f.number_field :age %>
-  </div>
-  <div class="field">
-    <%= f.label :parent %><br>
-    <%= f.text_field :parent %>
-  </div>
-  <div class="field">
-    <%= f.label :pink %><br>
-    <%= f.check_box :pink %>
-  </div>
-  <div class="field">
-    <%= f.label :yellow %><br>
-    <%= f.check_box :yellow %>
-  </div>
-  <div class="field">
-    <%= f.label :guard %><br>
-    <%= f.text_field :guard %>
-  </div>
-  <div class="field">
-    <%= f.label :tested %><br>
-    <%= f.date_select :tested %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="field form-group">
+      <label>First Name</label>
+      <%= f.text_field :fname,class:"form-control" %>
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <%= f.text_field :lname,class:"form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :age %><br>
+      <%= f.number_field :age,class:"form-control",min:"6",max:"12" %>
+    </div>
+    <div class="field">
+      <%= f.label :parent %><br>
+      <%= f.text_field :parent,class:"form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :pink %>
+      <%= f.check_box :pink,class:"form-control"%>
+    </div>
+    <div class="field">
+      <%= f.label :yellow %>
+      <%= f.check_box :yellow,class:"form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :guard %><br>
+      <%= f.text_field :guard,class:"form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :tested %><br>
+      <%= f.date_select :tested,class:"form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>

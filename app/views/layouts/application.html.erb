@@ -40,7 +40,10 @@
                             <!-- /input-group -->
                         </li>
 						<li>
-						<%= link_to 'New Entry', new_entry_path %>
+						<%= link_to new_entry_path,class: "active" do %>
+                            <i class ="fa fa-plus fa-fw"></i>
+                            New Swim Test
+                        <%end%>
 						</li>
                     </ul>
                 </div>
