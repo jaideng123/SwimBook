@@ -42,3 +42,6 @@ tr.hover {
    cursor: pointer;
    /* whatever other hover styles you want */
 }
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	padding: 0;
+}
