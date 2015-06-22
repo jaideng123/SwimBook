@@ -57,6 +57,12 @@ gem 'bundler', '>= 1.7.7'
 
 #DataTables Gem
 gem 'jquery-datatables-rails', '~> 3.3.0'
+#for Font Awesome
+gem "font-awesome-rails"
+
+gem 'faker'
+#to simulate large amounts of data
+ gem "dummy_data"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
