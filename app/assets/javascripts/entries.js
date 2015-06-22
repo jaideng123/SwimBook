@@ -2,7 +2,16 @@ var show_date = true;
 var show_guard = true;
 var show_parent = true;
 $(document).ready(function(){
-	$('#EntryTable').dataTable({bFilter: false,bAutoWidth: false,bSortable: false});
+        width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+        if (width < 768) {
+            $('#EntryTable').dataTable( {
+                "pagingType": "full",bFilter: false,bAutoWidth: false,bSortable: false
+            } );
+        } else {
+            $('#EntryTable').dataTable( {
+                "pagingType": "simple_numbers",bFilter: false,bAutoWidth: false,bSortable: false
+            } );
+        }
 	// function getUrlParameter(sParam)
 	// {
 	//     var sPageURL = window.location.search.substring(1);
