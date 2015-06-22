@@ -39,7 +39,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#Minimizes asset
 gem 'rails_12factor', group: :production
+
+#For gzipping files
+gem 'heroku-deflater', :group => :production
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
@@ -50,6 +55,7 @@ gem 'textacular', '~> 3.0'
 #Rails Assets
 gem 'bundler', '>= 1.7.7'
 
+#DataTables Gem
 gem 'jquery-datatables-rails', '~> 3.3.0'
 
 source 'https://rails-assets.org' do
