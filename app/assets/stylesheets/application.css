@@ -45,3 +45,11 @@ tr.hover {
 .dataTables_wrapper .dataTables_paginate .paginate_button{
 	padding: 0;
 }
+@media(max-width:768px) {
+select.form-control.input-sm{
+	display: inline;
+}
+div.row{
+	margin-right: 0px; 
+}
+}
