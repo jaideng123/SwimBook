@@ -53,3 +53,53 @@ div.row{
 	margin-right: 0px; 
 }
 }
+
+.btn-custom-lighten.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom-lighten {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #37a2d8;
+  background-image: -moz-linear-gradient(top, #279ad4, #4fafdf);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#279ad4), to(#4fafdf));
+  background-image: -webkit-linear-gradient(top, #279ad4, #4fafdf);
+  background-image: -o-linear-gradient(top, #279ad4, #4fafdf);
+  background-image: linear-gradient(to bottom, #279ad4, #4fafdf);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff279ad4', endColorstr='#ff4fafdf', GradientType=0);
+  border-color: #4fafdf #4fafdf #238abe;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #4fafdf;
+  border-radius:6px;
+
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-custom-lighten:hover,
+.btn-custom-lighten:focus,
+.btn-custom-lighten:active,
+.btn-custom-lighten.active,
+.btn-custom-lighten.disabled,
+.btn-custom-lighten[disabled] {
+  color: #ffffff;
+  background-color: #4fafdf;
+  *background-color: #3aa5db;
+}
+.btn-custom-lighten:active,
+.btn-custom-lighten.active {
+  background-color: #279ad4 ;
+}
+.submit-btn{
+  width: 10em; 
+  height: 2.5em;
+
+}
+.field_with_errors{
+  display: block;
+}
+
+#error_explanation{
+  width: 100%;
+}
