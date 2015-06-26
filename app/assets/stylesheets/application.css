@@ -11,9 +11,8 @@
  * file per style scope.
  *
  *= require_tree .
- *= require dataTables/jquery.dataTables
- *= require_self
  *= require bootstrap
+ *= require_self
  *= require metisMenu
  *= require dataTables.responsive
  *= require sb-admin-v2
@@ -38,19 +37,29 @@ margin-left: auto;
 .sidebar ul li{
 	border-bottom: 1px solid #E7E7E7;
 }
-tr.hover {
+tr .hover {
    cursor: pointer;
    /* whatever other hover styles you want */
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button{
+.dataTables_wrapper .dataTables_paginate .paginate_button {
 	padding: 0;
 }
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus{
+    background-color: #67A2D4;
+    color: #FFF;
+    border-color: #67A2D4;
+}
+
+
 @media(max-width:768px) {
 select.form-control.input-sm{
-	display: inline;
+  display: inline;
 }
 div.row{
-	margin-right: 0px; 
+  margin-right: 0px; 
 }
 }
 

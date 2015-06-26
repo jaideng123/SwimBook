@@ -5,6 +5,6 @@ class Entry < ActiveRecord::Base
 	validate :atleast_one_is_checked
 
   def atleast_one_is_checked
-    errors.add(:base, "Select at least one output test type") unless pink || yellow
+    errors.add(:base, "Select at least one test type") unless pink || yellow
   end
 end
