@@ -71,6 +71,9 @@ GEM
     mime-types (2.6.1)
     minitest (5.7.0)
     multi_json (1.11.1)
+    passenger (5.0.11)
+      rack
+      rake (>= 0.8.1)
     pg (0.18.2-x86-mingw32)
     rack (1.5.3)
     rack-test (0.6.3)
@@ -174,6 +177,7 @@ DEPENDENCIES
   jquery-datatables-rails (~> 3.3.0)
   jquery-rails
   jquery-turbolinks
+  passenger
   pg
   rails (= 4.1.8)
   rails-assets-angular!
