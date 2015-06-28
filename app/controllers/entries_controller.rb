@@ -6,6 +6,10 @@ class EntriesController < ApplicationController
   # GET /ideas.json
   def index
     @entries = Entry.all
+    respond_to do |format|
+      format.html
+      format.json { render json: EntriesDatatable.new(view_context)}
+    end
   end
 
   # GET /ideas/1
