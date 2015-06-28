@@ -1,5 +1,5 @@
 class EntriesDatatable
-  delegate :params, :h, :link_to, :number_to_currency, to: :@view
+  delegate :params, :h, :link_to, :number_to_currency,:raw, to: :@view
 
   def initialize(view)
     @view = view
@@ -21,8 +21,20 @@ private
       [
 	      link_to(entry.lname, entry),
 	      ERB::Util.h(entry.fname),
-	      ERB::Util.h(entry.pink),
-	      ERB::Util.h(entry.yellow),
+	      if entry.pink
+	        raw("<span style=\"background-color: #FF1975\"> 
+	      	<font size = \'4\'>&#10003;</font>
+    </span>")
+	  	  else
+	  	    ""
+	  	  end,
+	  	  if entry.yellow
+	        raw("<span style=\"background-color: #FFFF00\"> 
+        <font size = \'4'\>&#10003;</font>
+    </span>")
+	  	  else
+	  	    ""
+	      end,
 	      ERB::Util.h(entry.age),
 	      ERB::Util.h(entry.parent),
 	      ERB::Util.h(entry.guard),
