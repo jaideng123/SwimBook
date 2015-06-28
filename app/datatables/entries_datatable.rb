@@ -50,9 +50,6 @@ private
   def fetch_entries
     entries = Entry.order("#{sort_column} #{sort_direction}")
     entries = entries.page(page).per_page(per_page)
-    if params[:search][:value].present?
-      entries = entries.fuzzy_search({lname: params[:search][:value], fname: params[:search][:value]}, false)
-    end
     entries
   end
 
