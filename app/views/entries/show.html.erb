@@ -1,44 +1,47 @@
 <p id="notice"><%= notice %></p>
+<div class = "col-lg-5">
+<div class="row entry-divider">
+  <strong>Name:</strong>
+   <%= @entry.fname %> <%= @entry.lname %>
+</div>
 
-<p>
-  <strong>Fname:</strong>
-  <%= @entry.fname %>
-</p>
-
-<p>
-  <strong>Lname:</strong>
-  <%= @entry.lname %>
-</p>
-
-<p>
+<div class="row entry-divider">
   <strong>Age:</strong>
   <%= @entry.age %>
-</p>
+</div>
 
-<p>
+<div class="row entry-divider">
   <strong>Parent:</strong>
   <%= @entry.parent %>
-</p>
-
-<p>
+</div>
+<div class="row entry-divider">
   <strong>Pink:</strong>
-  <span style="background-color: #FF1975"><%= @entry.pink %></span>
-</p>
+  <span style="background-color: #FF1975"> 
+      <% if @entry.pink? %>
+        <font size = '4'>&#10003;</font>
+      <% end %>
+  </span>
+</div>
 
-<p>
+<div class="row entry-divider">
   <strong>Yellow:</strong>
-  <span style="background-color: #FFFF00"><%= @entry.yellow %></span>
-</p>
+  <span style="background-color: #FFFF00"> 
+      <% if @entry.yellow? %>
+        <font size = '4'>&#10003;</font>
+      <% end %>
+    </span>
+</div>
 
-<p>
+<div class="row entry-divider">
   <strong>Guard:</strong>
   <%= @entry.guard %>
-</p>
-<p>
+</div>
+<div class="row" style="padding-bottom: 10px">
   <strong>Test Date:</strong>
   <%= @entry.tested %>
-</p>
-
-<%= button_to 'Edit', edit_entry_path(@entry), method: :get %> 
-<%= button_to 'Destroy', @entry, method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= button_to 'Back', :back,method: :get %>
+</div>
+<div class="row">
+<%= button_to 'Edit', edit_entry_path(@entry), method: :get,class:"btn btn-primary show-btn" %> 
+<%= button_to 'Delete', @entry, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger show-btn"%>
+</div>
+</div>
