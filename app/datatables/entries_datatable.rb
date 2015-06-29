@@ -1,5 +1,5 @@
 class EntriesDatatable
-  delegate :params, :h, :link_to, :number_to_currency,:raw, to: :@view
+  delegate :params, :h, :link_to, :number_to_currency,:raw,:truncate, to: :@view
 
   def initialize(view)
     @view = view
@@ -36,8 +36,8 @@ private
 	  	    ""
 	      end,
 	      ERB::Util.h(entry.age),
-	      ERB::Util.h(truncate(entry.parent,:length => 10)),
-	      ERB::Util.h(truncate(entry.guard,:length => 10)),
+	      ERB::Util.h(truncate(entry.parent,:length => 12)),
+	      ERB::Util.h(truncate(entry.guard,:length => 12)),
 	      ERB::Util.h(entry.tested)
 	   ]
     end
