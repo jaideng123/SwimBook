@@ -2,8 +2,8 @@ $(document).ready(function(){
         width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
         if (width < 768) {
             $('#EntryTable').dataTable( {
-                "pagingType": "full",bFilter: false,bAutoWidth: false,bSortable: false,bProcessing: true,
-          			bServerSide: true, sAjaxSource: $('#EntryTable').data('source')
+                "pagingType": "full",bFilter: false,bAutoWidth: false,bSortable: false,processing: true,
+          			serverSide: true, ajax: $('#EntryTable').data('source')
             } );
         } else {
             $('#EntryTable').dataTable( {
