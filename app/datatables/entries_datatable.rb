@@ -19,8 +19,8 @@ private
   def data
     entries.map do |entry|
       [
-	      link_to(entry.lname, entry),
-	      ERB::Util.h(entry.fname),
+	      link_to(truncate(entry.lname,:length => 10), entry),
+	      ERB::Util.h(truncate(entry.fname,:length => 10)),
 	      if entry.pink
 	        raw("<span style=\"background-color: #FF1975\"> 
 	      	<font size = \'4\'>&#10003;</font>
@@ -36,8 +36,8 @@ private
 	  	    ""
 	      end,
 	      ERB::Util.h(entry.age),
-	      ERB::Util.h(entry.parent),
-	      ERB::Util.h(entry.guard),
+	      ERB::Util.h(truncate(entry.parent,:length => 10)),
+	      ERB::Util.h(truncate(entry.guard,:length => 10)),
 	      ERB::Util.h(entry.tested)
 	   ]
     end
