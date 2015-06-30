@@ -21,10 +21,16 @@
 //= require sb-admin-v2
 //= require dataTables.responsive
 //= require turbolinks
+//= require bootstrap-select
+
 //somehow this didnt get added from the sb-admin-2 theme
 $(function() {
 
     $('#side-menu').metisMenu();
+    $('div.dataTables_length select').addClass('selectpicker');
+    $('.selectpicker').selectpicker({
+        style: 'btn-info'
+    });
 
 });
 

@@ -18,6 +18,7 @@
  *= require dataTables.responsive
  *= require morrisjs
  *= require font-awesome
+ *= require bootstrap-select
 */
  
 /* Fixes sidebar weirdness that occurs */
