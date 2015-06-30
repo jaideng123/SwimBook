@@ -12,10 +12,10 @@
  *
  *= require_tree .
  *= require bootstrap
+ *= require sb-admin-v2
  *= require_self
  *= require metisMenu
  *= require dataTables.responsive
- *= require sb-admin-v2
  *= require morrisjs
  *= require font-awesome
 */
@@ -32,6 +32,10 @@ margin-top: 55px;
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
 margin-left: auto;
+}
+div.dataTables_paginate{
+  float: right;
+  padding-right: 20px;
 }
 }
 .sidebar ul li{
@@ -60,6 +64,10 @@ select.form-control.input-sm{
 }
 div.row{
   margin-right: 0px; 
+}
+div.dataTables_paginate{
+  float: none;
+  text-align: center;
 }
 }
 
