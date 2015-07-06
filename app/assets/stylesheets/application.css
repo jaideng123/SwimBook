@@ -70,6 +70,12 @@ div.dataTables_paginate{
   float: none;
   text-align: center;
 }
+h1{
+  font-size: 20px;
+}
+}
+.dataTables_length label{
+  width: 100px;
 }
 
 .btn-blue {
