@@ -67,4 +67,4 @@ ready = function() {
         element.addClass('active');
     }
 };
-$(document).on('ready, page:change', ready);
+$(document).on('ready', ready);
