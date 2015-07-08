@@ -15,4 +15,5 @@
 /log/*.log
 /tmp
 
-config/application.yml  
+config/application.yml
+db/csv/cleaned-names.csv
