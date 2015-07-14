@@ -15,12 +15,12 @@ $(document).ready(function(){
         }
         if (width < 768) {
             $('#SearchTable').dataTable( {
-                "pagingType": "full",bFilter: false,bAutoWidth: false,bSortable: false,language:{
+                "pagingType": "full",bFilter: false,bAutoWidth: false,bSortable: false,bSort: false,language:{
                     lengthMenu:"_MENU_"}
             } );
         } else {
             $('#SearchTable').dataTable( {
-                "pagingType": "simple_numbers",bFilter: false,bAutoWidth: false,bSortable: false,language:{
+                "pagingType": "simple_numbers",bFilter: false,bAutoWidth: false,bSortable: false,bSort: false,language:{
                     lengthMenu:"_MENU_"}
             } );
         }
