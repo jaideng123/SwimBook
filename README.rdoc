@@ -1,7 +1,7 @@
 == README
 
-I work at a YMCA where we swim test kids every day and put it all in 2 huge books that are a pain and get disorganized, so i designed this web app to keep track of all the kids that we swim test so they can be easily added and searched through. I want it to look pretty but the main focus will be simplicity and ease of use.
+I work at a YMCA where we swim test kids every day and put it all in 2 huge books that are a pain and get disorganized, so i designed this web app to keep track of all the kids that we swim test so they can be easily added and searched through. Currently being used by 3 YMCA facilities
 
-*Ruby Version = 2.1.5
+* Ruby Version = 2.1.5
 
-*Rails Version = 4.1.8
+* Rails Version = 4.1.8
