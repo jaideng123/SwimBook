@@ -63,7 +63,10 @@ gem "font-awesome-rails"
 
 gem 'faker'
 #to simulate large amounts of data
- gem "dummy_data"
+gem "dummy_data"
+
+#for contact page
+gem 'high_voltage', '~> 2.4.0'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'

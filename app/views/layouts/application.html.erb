@@ -46,12 +46,24 @@
                                   <% end %>
                             <!-- /input-group -->
                         </li>
+            <li>
+            <%= link_to root_url,class: "active" do %>
+                            <i class ="fa fa-home fa-fw"></i>
+                            Home
+                        <%end%>
+            </li>
 						<li>
 						<%= link_to new_entry_path,class: "active" do %>
                             <i class ="fa fa-plus fa-fw"></i>
                             New Swim Test
                         <%end%>
 						</li>
+            <li>
+            <%= link_to page_path('contact'),class: "active" do %>
+                            <i class ="fa fa-paper-plane fa-fw"></i>
+                            Contact
+                        <%end%>
+            </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

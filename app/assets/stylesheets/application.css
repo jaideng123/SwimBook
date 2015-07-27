@@ -119,3 +119,21 @@ h1{
 #error_explanation{
   width: 100%;
 }
+
+#tagline {
+    font-size: 64px;
+    word-spacing: 1px;
+    line-height: 90px;
+    font-family: 'Roboto', serif;
+    text-transform: none;
+    letter-spacing: -3px;
+    color: #181818;
+    text-align: center;
+    margin: 0.95em 0px 0px;
+    font-weight: 700;
+}
+a.contact:hover{
+    color: #721616;
+    background: #ffffff;
+    text-decoration: none;
+}

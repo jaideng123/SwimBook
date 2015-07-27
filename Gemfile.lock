@@ -49,6 +49,7 @@ GEM
       railties (>= 3.2, < 5.0)
     heroku-deflater (0.5.3)
       rack (>= 1.4.5)
+    high_voltage (2.4.0)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.3.1)
@@ -173,6 +174,7 @@ DEPENDENCIES
   faker
   font-awesome-rails
   heroku-deflater
+  high_voltage (~> 2.4.0)
   jbuilder (~> 2.0)
   jquery-datatables-rails (~> 3.3.0)
   jquery-rails
