@@ -1,10 +1,11 @@
 source 'http://rubygems.org'
-
+ruby "~> 2.5.5"
 #for pagination
 gem 'will_paginate', '~>3.0.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
+gem 'json', '1.8.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18.2'
 # Use SCSS for stylesheets
