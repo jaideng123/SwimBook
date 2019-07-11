@@ -4,7 +4,7 @@ ruby "~> 2.5.5"
 gem 'will_paginate', '~>3.0.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '4.2.11.1'
 gem 'json', '1.8.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18.2'
@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use unicorn as the app server
 # gem 'unicorn'
-gem "passenger"
+gem "passenger", ">= 5.1.0"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
